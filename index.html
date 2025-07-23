@@ -27,15 +27,27 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   <body>
-    <header>
-      <nav class="flex flex-row justify-between pt-[30px] pr-[150px] pl-[150px] items-center">
-        <img src="./assets/logo.png" alt="" />
-        <div class="flex flex-row gap-x-[48px] items-center">
-          <a class="" href="">Home</a><a href="">Shop</a><a href="">About Us</a>
-           <i class="fa-solid fa-cart-shopping">Cart ($56)</i>
+    <header class="bg-[#F5F8FF]">
+      <nav class="flex flex-row justify-between pt-[30px] pr-[150px] pl-[150px] items-center pb-[282px] max-sm:pl-[16px] max-sm:pr-[16px] max-sm:pt-[67px] max-sm:pb-[28px] max-sm:items-center">
+        <img class="max-sm:w-[63px]" src="./assets/logo.png" alt="" />
+        <div class="flex flex-row gap-x-[48px] items-center max-sm:hidden">
+          <a class="text-[1rem] font-bold inter-font" href="">Home</a><a class="inter-font text-[1rem] font-normal text-[#8987A1]" href="">Shop</a><a class="inter-font text-[1rem] font-normal text-[#8987A1]" href="">About Us</a>
+           <i class="fa-solid fa-cart-shopping inter-font text-[1rem] font-light text-[#000000]" > Cart ($56)</i>
+        </div>
+        <div class="lg:hidden md:hidden  text-end">
+             <i class="fa-solid fa-cart-shopping inter-font text-[1rem] font-light text-[#000000] text-end" > Cart ($56)</i>
         </div>
         
       </nav>
+      <section class="flex flex-row justify-between pr-[150px] pl-[150px] pb-[120px] max-sm:pb-[65px] max-sm:flex-col-reverse max-sm:pl-[16px] max-sm:pr-[16px]">
+        <div>
+            <h2 class="noto-serif-font text-[#000000] font-black text-[4rem] max-sm:text-[1.5rem]">ALWAYS <span class="text-[#E95A08]">FRESH</span> <br> <span class="text-[#E95A08]"> FLOWERS</span></h2>
+            <p class="text-[1.3rem] text-black/50 font-normal inter-font mt-[13px] max-sm:text-[0.8rem]">Indulge your senses with the beauty and fragrance of <br> our fresh flower shop. From classic roses to exotic <br> blooms, we offer a wide variety of fresh flowers that <br> are perfect for any occasion. </p>
+        </div>
+        <div>
+            <img class="max-sm:w-full" src="./assets/hero-flower.png" alt="">
+        </div>
+      </section>
     </header>
     <main></main>
     <footer></footer>

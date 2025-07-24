@@ -29,7 +29,7 @@
   <body>
     <header class="bg-[#F5F8FF]">
       <nav
-        class="flex flex-row justify-between pt-[30px] pr-[150px] pl-[150px] items-center pb-[282px] max-sm:pl-[16px] max-sm:pr-[16px] max-sm:pt-[67px] max-sm:pb-[28px] max-sm:items-center"
+        class="nav-bar-section flex flex-row justify-between pt-[30px] pr-[150px] pl-[150px] items-center pb-[282px] max-sm:pl-[16px] max-sm:pr-[16px] max-sm:pt-[67px] max-sm:pb-[28px] max-sm:items-center"
       >
         <img class="max-sm:w-[63px]" src="./assets/logo.png" alt="" />
         <div class="flex flex-row gap-x-[48px] items-center max-sm:hidden">
@@ -54,7 +54,7 @@
         </div>
       </nav>
       <section
-        class="flex flex-row justify-between pr-[150px] pl-[150px] pb-[120px] max-sm:pb-[65px] max-sm:flex-col-reverse max-sm:pl-[16px] max-sm:pr-[16px]"
+        class="nav-banner-section flex flex-row justify-between pr-[150px] pl-[150px] pb-[120px] max-sm:pb-[65px] max-sm:flex-col-reverse max-sm:pl-[16px] max-sm:pr-[16px]"
       >
         <div>
           <h2
@@ -78,9 +78,9 @@
       </section>
     </header>
     <main
-      class="bg-[#F5F8FF] pr-[150px] pl-[150px] pb-[120px] max-sm:pr-[17px] max-sm:pl-[14px]"
+      class="bg-[#F5F8FF] pr-[150px] pl-[150px] pb-[120px] max-sm:pb-[40px] max-sm:pr-[17px] max-sm:pl-[14px]"
     >
-      <section class="mb-[210px] max-sm:mb-[42px] text-center">
+      <section class="plan-section mb-[210px] max-sm:mb-[42px] text-center">
         <h2
           class="text-[#000000] font-black text-[3.1rem] max-sm:text-[1.5rem] noto-serif-font mb-[16px]"
         >
@@ -242,7 +242,7 @@
           </div>
         </div>
       </section>
-      <section class=" flex flex-row justify-between max-sm:flex-col mb-[134px]">
+      <section class="lover-section flex flex-row justify-between max-sm:flex-col mb-[134px] gap-x-[60px]">
         <div class="relative">
           <img src="./assets/flower-store.png" alt="" />
           <img
@@ -279,7 +279,7 @@
           </ol>
         </div>
       </section>
-      <section class="">
+      <section class="latest-deals-section">
         <div class="text-center mb-[120px] max-sm:mb-[52px]">
           <h2
             class="noto-serif-font text-[#000000] font-black text-[3.1rem] max-sm:text-[1.5rem] mb-[16px]"
@@ -298,41 +298,46 @@
           class="flex flex-row max-sm:flex-col gap-x-[28px] justify-between items-center"
         >
           <div>
+
             <div
-              class="bg-[url('./assets/deal-bloom.png'),linear-gradient(to_bottom,_rgba(0,0,0,0.8),_rgba(0,0,0,0.8))] text-center rounded-[14px] pt-[65px] pl-[49px] pr-[47px] pb-[64px] bg-no-repeat w-[366px] bg-cover mb-[25px]"
+              class="relative bg-[url('./assets/deal-bloom.png'),linear-gradient(to_bottom,_rgba(0,0,0,0.8),_rgba(0,0,0,0.8))] text-center rounded-[14px] pt-[65px] pl-[49px] pr-[47px] pb-[64px] bg-no-repeat w-[366px] bg-cover mb-[25px]"
             >
-              <h2 class="text-white noto-serif-font text-[1.25rem] mb-[19px]">
+              <div class="absolute inset-0 bg-black/40 rounded-[14px]"></div>
+
+              <h2 class="relative z-10 text-white noto-serif-font text-[1.25rem] mb-[19px]">
                 60% Off | Bloom Plant
               </h2>
               <button
-                class="text-white inter-font text-[1rem] font-semibold underline"
+                class="relative z-10 text-white inter-font text-[1rem] font-semibold underline hover:cursor-pointer"
               >
                 Shop Now
               </button>
             </div>
             <div
-              class="bg-[url('./assets/deal-ana.png'),linear-gradient(to_bottom,_rgba(0,0,0,0.8),_rgba(0,0,0,0.8))] text-center rounded-[14px] pt-[65px] pl-[49px] pr-[47px] pb-[64px] bg-no-repeat w-[366px] bg-cover"
+              class="relative bg-[url('./assets/deal-ana.png'),linear-gradient(to_bottom,_rgba(0,0,0,0.8),_rgba(0,0,0,0.8))] text-center rounded-[14px] pt-[65px] pl-[49px] pr-[47px] pb-[64px] bg-no-repeat w-[366px] bg-cover"
             >
-              <h2 class="text-white noto-serif-font text-[1.25rem] mb-[19px]">
+            <div class="absolute inset-0 bg-black/40 rounded-[14px]"></div>
+              <h2 class="relative z-10 text-white noto-serif-font text-[1.25rem] mb-[19px]">
                 30% Off | Ana Plant
               </h2>
               <button
-                class="text-white inter-font text-[1rem] font-semibold underline"
+                class="relative z-10 text-white inter-font text-[1rem] font-semibold underline hover:cursor-pointer"
               >
                 Shop Now
               </button>
             </div>
           </div>
           <div
-            class="bg-[url('./assets/deal-zabo.png')] max-sm:mt-[15.5px] bg-cover bg-no-repeat w-[753px] max-sm:w-[361px] max-sm:h-[177px] text-center pt-[173px] max-sm:pt-[60px] pb-[151px] max-sm:pb-[35px] pr-[127px] max-sm:pr-[42px] pl-[128px] max-sm:pl-[49px] rounded-[22px]"
+            class="relative bg-[url('./assets/deal-zabo.png')] max-sm:mt-[15.5px] bg-cover bg-no-repeat w-[753px] max-sm:w-[361px] max-sm:h-[177px] text-center pt-[173px] max-sm:pt-[60px] pb-[151px] max-sm:pb-[35px] pr-[127px] max-sm:pr-[42px] pl-[128px] max-sm:pl-[49px] rounded-[22px]"
           >
+          <div class="absolute inset-0 bg-black/40 rounded-[14px]"></div>
             <h2
-              class="text-white noto-serif-font text-[2.5rem] max-sm:text-[1.25rem] font-black mb-[19px]"
+              class="relative z-10 text-white noto-serif-font text-[2.5rem] max-sm:text-[1.25rem] font-black mb-[19px]"
             >
               25% Off | Zabo Plant
             </h2>
             <button
-              class="text-white inter-font text-[1.75rem] max-sm:text-[1rem] font-semibold underline"
+              class="relative z-10 text-white inter-font text-[1.75rem] max-sm:text-[1rem] font-semibold underline hover:cursor-pointer"
             >
               Shop Now
             </button>
@@ -341,16 +346,16 @@
       </section>
     </main>
     <footer>
-      <section>
+      <section class="join-section">
         <div class="bg-[url('./assets/news-letter-bg.png')] pt-[200px] max-sm:pt-[110px] pl-[305px] pr-[305px] pb-[193px] max-sm:pb-[65px] bg-center text-center bg-cover bg-no-repeat max-sm:px-[79px]">
           <h2 class="noto-serif-font text-[3.1rem] max-sm:text-[1.25rem] text-white mb-[23px]">Join the colorful Bunch</h2>
           <div class="flex flex-row text-center  items-center justify-center">
-           <input class="w-[644px] bg-white pt-[15.5px] pb-[15.5px] pl-[20px]" type="email" name="" id="" placeholder="Write Email">
-           <button class="hover:cursor-pointer bg-[#E95A08] text-white inter-font text-[1rem] py-[15.6px] px-[53px]">Subscribe</button>
+           <input class="w-[644px] max-sm:w-[218px] bg-white pt-[15.5px] pb-[15.5px] pl-[20px]" type="email" name="" id="" placeholder="Write Email">
+           <button class="hover:cursor-pointer max-sm:w-[103px] bg-[#E95A08] text-white inter-font text-[1rem] py-[15.6px] px-[53px] max-sm:px-[12px] max-sm:py-[15px] max-sm:h-[55px]">Subscribe</button>
            </div>
         </div>
       </section>
-      <section class="bg-[#F5F8FF] flex flex-row justify-between pl-[160px] pt-[50px] max-sm:pl-[20px] pr-[160px] max-sm:pr-[14px] pb-[50px] max-sm:flex-col">
+      <section class="footer-page-section bg-[#F5F8FF] flex flex-row justify-between pl-[160px] pt-[50px] max-sm:pl-[20px] pr-[160px] max-sm:pr-[14px] pb-[50px] max-sm:flex-col">
         <div class="">
           <img class="w-[135px] mb-[16px] max-sm:mb-[16px]" src="./assets/logo.png" alt="">
           <p class="inter-font text-[1.3rem] text-black/50">Indulge your senses with the <br> beauty and fragrance of our fresh <br> flower shop. </p>
